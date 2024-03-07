@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Ticket Booking</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <nav>
+                <div class="navbar z-10 fixed m-auto bg-opacity-70 px-[90px] bg-white">
+                    <div class="navbar-start ">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Blog</a></li>
+                                <li>
+                                    <a>Offer</a>
+                                </li>
+                                <li><a>Airlines</a></li>
+                                <li><a>About</a></li>
+                            </ul>
+                        </div>
+                        <img src="https://i.ibb.co/Jv5cVmj/LOGO.png" alt="">
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li class="text-[20px]"><a>Blog</a></li>
+                            <li class="text-[20px]"><a>Offer</a></li>
+                            <li class="text-[20px]"><a>Airlines</a></li>
+                            <li class="text-[20px]"><a>About</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end ">
+                        <a class="btn bg-blue-600 border-none text-white text-[20px]">Sing In</a>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+    </div>
+    <div class="w-full bg-cover bg-center" style="background-image: url('https://i.ibb.co/2YC87gS/Rectangle-2.png');">
+        <div class="max-w-[1366px] mx-auto pb-10">
+            <div class="pt-8 lg:pt-24 pb-6 pl-5">
+                <h1 class="text-white text-3xl lg:text-5xl">Welcome To <span
+                        class="text-blue-600 font-bold">AirBook</span></h1>
+            </div>
+            <div class="bg-white mx-auto pb-10 mb-14 pt-5 rounded-lg max-w-[1366px]">
+                <div class="flex flex-col lg:flex-row justify-between max-w-[1223px] mx-auto mt-8 mb-6 px-4 lg:px-0">
+                    <div class="flex gap-2 mb-4 lg:mb-0">
+                        <div class="flex bg-gray-200 items-center justify-center p-2 rounded-7">
+                            <img class="w-4 h-4 m-1" src="https://i.ibb.co/bXC0H39/plate-590290.png" alt="">
+                            <button class="">One way</button>
+                        </div>
+                        <div class="flex bg-blue-600 items-center justify-center p-2 rounded-7">
+                            <img class="w-4 h-4 m-1" src="https://i.ibb.co/bXC0H39/plate-590290.png" alt="">
+                            <button class="text-white">Round trip</button>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="flex bg-gray-200 items-center justify-center p-2 rounded-7">
+                            <img class="w-4 h-4 m-1" src="https://i.ibb.co/R4LQJVp/chevron-10009171.png" alt="">
+                            <button class="text-blue-600">1 Traveler</button>
+                        </div>
+                        <div class="flex bg-gray-200 items-center justify-center p-2 rounded-7">
+                            <img class="w-4 h-4 m-1" src="https://i.ibb.co/R4LQJVp/chevron-10009171.png" alt="">
+                            <button class="text-blue-600">Economy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row justify-center gap-4 lg:gap-8 mb-6 px-4 lg:px-0">
+                    <div class="border border-gray-500 rounded-lg flex items-center gap-3 p-3 mb-4 lg:mb-0">
+                        <div class="flex gap-2 pt-2">
+                            <p class="font-bold">DAC</p>
+                            <div class="h-8 border-l border-gray-500"></div>
+                        </div>
+                        <div>
+                            <h1 class="font-bold">Dhaka</h1>
+                            <p class="text-sm lg:text-base">Hazrat Shahjalal International</p>
+                        </div>
+                    </div>
+                    <div class="border border-gray-500 rounded-lg flex items-center gap-3 p-3 mb-4 lg:mb-0">
+                        <div class="flex gap-2 pt-2">
+                            <p class="font-bold">Cxb</p>
+                            <div class="h-8 border-l border-gray-500"></div>
+                        </div>
+                        <div>
+                            <h1 class="font-bold">Cox's Bazar</h1>
+                            <p class="text-sm lg:text-base">Cox's Bazar International</p>
+                        </div>
+                    </div>
+                    <div
+                        class="border border-gray-500 rounded-lg h-[70px] w-[260px] flex items-center gap-3 p-3 mb-4 lg:mb-0">
+                        <div class="flex gap-2 pt-2">
+                            <p class="font-bold">03</p>
+                            <div class="h-8 border-l border-gray-500"></div>
+                        </div>
+                        <div>
+                            <h1 class="font-bold">October</h1>
+                            <p class="text-sm lg:text-base">Tuesday, 2023</p>
+                        </div>
+                    </div>
+                    <div
+                        class="border border-gray-500 rounded-lg h-[70px] w-[260px] flex items-center gap-3 p-3 mb-4 lg:mb-0">
+                        <div class="flex gap-2 pt-2">
+                            <p class="font-bold">05</p>
+                            <div class="h-8 border-l border-gray-500"></div>
+                        </div>
+                        <div>
+                            <h1 class="font-bold">October</h1>
+                            <p class="text-sm lg:text-base">Tuesday, 2023</p>
+                        </div>
+                    </div>
+                    <div class="bg-yellow-500 rounded-lg flex items-center p-3">
+                        <img class="w-6 h-6 m-1" src="https://i.ibb.co/dGbXRmd/zoom-12206478.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+        <!-- card -->
+        <section class="max-w-[1366px] m-auto">
+            <h1 class="mt-8 sm:mt-20 font-extrabold text-lg sm:text-2xl mb-4 sm:mb-10">Featured Destinations</h1>
+
+            <div class="flex flex-col sm:flex-row justify-between">
+                <!-- card-1 -->
+                <div class="card w-full sm:w-[calc(33%-1rem)] mb-6 sm:mb-0 bg-base-100 shadow-xl">
+                    <figure class="px-5 pt-5">
+                        <img src="https://i.ibb.co/zR8tMDB/Rectangle-18-11.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center">
+                        <p class="font-bold text-base sm:text-lg">Discover The Timeless City With Tourisanbul of Turkish
+                            Airlines</p>
+                        <div class="card-actions">
+                            <button class="btn btn-warning text-base sm:text-lg font-semibold">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-2 -->
+                <div class="card w-full sm:w-[calc(33%-1rem)] mb-6 sm:mb-0 bg-base-100 shadow-xl">
+                    <figure class="px-5 pt-5">
+                        <img src="https://i.ibb.co/zR8tMDB/Rectangle-18-11.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center">
+                        <p class="font-bold text-base sm:text-lg">Discover The Timeless City With Tourisanbul of Turkish
+                            Airlines</p>
+                        <div class="card-actions">
+                            <button class="btn btn-warning text-base sm:text-lg font-semibold">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card-3 -->
+                <div class="card w-full sm:w-[calc(33%-1rem)] bg-base-100 shadow-xl">
+                    <figure class="px-5 pt-5">
+                        <img src="https://i.ibb.co/zR8tMDB/Rectangle-18-11.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center">
+                        <p class="font-bold text-base sm:text-lg">Discover The Timeless City With Tourisanbul of Turkish
+                            Airlines</p>
+                        <div class="card-actions">
+                            <button class="btn btn-warning text-base sm:text-lg font-semibold">View More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Deals and offer -->
+
+        <section class="max-w-[1366px] m-auto">
+            <h1 class="mt-[100px] font-extrabold text-[30px] mb-[50px]"> Deals and Offers</h1>
+
+            <div class="offer">
+
+
+                <input type="radio" name="position" />
+                <input type="radio" name="position" checked />
+                <input type="radio" name="position" />
+
+
+
+                <main id="carousel">
+                    <div class="item">
+                        <div class="card card-side bg-base-100 shadow-xl">
+                            <figure><img class="h-[230px] w-[300px]"
+                                    src="https://i.ibb.co/84yzgjy/slider-Up-to-14-discount-on-Domestic-flights-2.png"
+                                    alt="Movie" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">With Bkash Payment Only</h2>
+                                <p class="text-blue-500">Upto 14% discount on the base fare of domestic flights</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card card-side bg-base-100 shadow-xl">
+                            <figure><img class="h-[230px] w-[300px]"
+                                    src="https://i.ibb.co/qYj28Cr/slider-Up-to-14-discount-on-Domestic-flights-2-1.png"
+                                    alt="Movie" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">With Bkash Payment Only</h2>
+                                <p class="text-blue-500">Upto 14% discount on the base fare of domestic flights</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card card-side bg-base-100 shadow-xl">
+                            <figure><img class="h-[230px] w-[300px]"
+                                    src="https://i.ibb.co/q7yBNgj/slider-Up-to-14-discount-on-Domestic-flights-2-2.png"
+                                    alt="Movie" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">With Bkash Payment Only</h2>
+                                <p class="text-blue-500">Upto 14% discount on the base fare of domestic flights</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <main>
+
+
+            </div>
+
+
+
+        </section>
+
+        <section class="max-w-[1366px] m-auto">
+            <h1 class="mt-8 sm:mt-20 font-extrabold text-lg sm:text-2xl mb-4 sm:mb-10">Popular Airlines</h1>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-around gap-6">
+                <!-- air-1 -->
+                <div class="flex gap-4 align-middle justify-center">
+                    <div><img src="https://i.ibb.co/j3VzMWQ/BBA.png" alt=""></div>
+                    <div>
+                        <h1 class="text-blue-600 font-semibold text-[17px]">Biman Bangla <br> Airlines</h1>
+                        <div class="flex gap-1 align-middle ">
+                            <div class="rating w-4 h-4"><input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" /></div>
+                            <div>
+                                <p class="text-[15px]">5 (753 Review)</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- air-1 -->
+                <div class="flex gap-4 align-middle justify-center">
+                    <div><img src="https://i.ibb.co/rZmk558/Malaysia.png" alt=""></div>
+                    <div>
+                        <h1 class="text-blue-600 font-semibold text-[17px]">Malaysia Airlines</h1>
+                        <div class="flex gap-1 align-middle ">
+                            <div class="rating w-4 h-4"><input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" /></div>
+                            <div>
+                                <p class="text-[15px]">5 (753 Review)</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- air-1 -->
+                <div class="flex gap-4 align-middle justify-center">
+                    <div><img src="https://i.ibb.co/8Xsk2Xx/Emirates.png" alt=""></div>
+                    <div>
+                        <h1 class="text-blue-600 font-semibold text-[17px]">Emirates Airlines</h1>
+                        <div class="flex gap-1 align-middle ">
+                            <div class="rating w-4 h-4"><input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" /></div>
+                            <div>
+                                <p class="text-[15px]">5 (753 Review)</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- air-1 -->
+                <div class="flex gap-4 align-middle justify-center">
+                    <div><img src="https://i.ibb.co/j3VzMWQ/BBA.png" alt=""></div>
+                    <div>
+                        <h1 class="text-blue-600 font-semibold text-[17px]">Biman Bangla <br> Airlines</h1>
+                        <div class="flex gap-1 align-middle ">
+                            <div class="rating w-4 h-4"><input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" /></div>
+                            <div>
+                                <p class="text-[15px]">5 (753 Review)</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+                <!-- air-1 -->
+                <div class="flex gap-4 align-middle justify-center">
+                    <div><img src="https://i.ibb.co/rZmk558/Malaysia.png" alt=""></div>
+                    <div>
+                        <h1 class="text-blue-600 font-semibold text-[17px]">Malaysia Airlines</h1>
+                        <div class="flex gap-1 align-middle ">
+                            <div class="rating w-4 h-4"><input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" /></div>
+                            <div>
+                                <p class="text-[15px]">5 (753 Review)</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- air-1 -->
+                <div class="flex gap-4 align-middle justify-center">
+                    <div><img src="https://i.ibb.co/8Xsk2Xx/Emirates.png" alt=""></div>
+                    <div>
+                        <h1 class="text-blue-600 font-semibold text-[17px]">Emirates Airlines</h1>
+                        <div class="flex gap-1 align-middle ">
+                            <div class="rating w-4 h-4"><input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" /></div>
+                            <div>
+                                <p class="text-[15px]">5 (753 Review)</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- air-1 -->
+                <div class="flex gap-4 align-middle justify-center">
+                    <div><img src="https://i.ibb.co/j3VzMWQ/BBA.png" alt=""></div>
+                    <div>
+                        <h1 class="text-blue-600 font-semibold text-[17px]">Biman Bangla <br> Airlines</h1>
+                        <div class="flex gap-1 align-middle ">
+                            <div class="rating w-4 h-4"><input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" /></div>
+                            <div>
+                                <p class="text-[15px]">5 (753 Review)</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- air-1 -->
+                <div class="flex gap-4 align-middle justify-center">
+                    <div><img src="https://i.ibb.co/v1z5NPp/Turkish-Airlines.png" alt=""></div>
+                    <div>
+                        <h1 class="text-blue-600 font-semibold text-[17px]">Turkish Airlines</h1>
+                        <div class="flex gap-1 align-middle ">
+                            <div class="rating w-4 h-4"><input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" /></div>
+                            <div>
+                                <p class="text-[15px]">5 (753 Review)</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+                <!-- air-1 -->
+                <div class="flex gap-4 align-middle justify-center">
+                    <div><img src="https://i.ibb.co/v1z5NPp/Turkish-Airlines.png" alt=""></div>
+                    <div>
+                        <h1 class="text-blue-600 font-semibold text-[17px]">Turkish Airlines</h1>
+                        <div class="flex gap-1 align-middle ">
+                            <div class="rating w-4 h-4"><input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" /></div>
+                            <div>
+                                <p class="text-[15px]">5 (753 Review)</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- air-1 -->
+                <div class="flex gap-4 align-middle justify-center">
+                    <div><img src="https://i.ibb.co/j3VzMWQ/BBA.png" alt=""></div>
+                    <div>
+                        <h1 class="text-blue-600 font-semibold text-[17px]">Biman Bangla <br> Airlines</h1>
+                        <div class="flex gap-1 align-middle ">
+                            <div class="rating w-4 h-4"><input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" /></div>
+                            <div>
+                                <p class="text-[15px]">5 (753 Review)</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- air-1 -->
+                <div class="flex gap-4 align-middle justify-center">
+                    <div><img src="https://i.ibb.co/8Xsk2Xx/Emirates.png" alt=""></div>
+                    <div>
+                        <h1 class="text-blue-600 font-semibold text-[17px]">Emirates Airlines</h1>
+                        <div class="flex gap-1 align-middle ">
+                            <div class="rating w-4 h-4"><input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" /></div>
+                            <div>
+                                <p class="text-[15px]">5 (753 Review)</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- air-1 -->
+                <div class="flex gap-4 align-middle justify-center">
+                    <div><img src="https://i.ibb.co/j3VzMWQ/BBA.png" alt=""></div>
+                    <div>
+                        <h1 class="text-blue-600 font-semibold text-[17px]">Biman Bangla <br> Airlines</h1>
+                        <div class="flex gap-1 align-middle ">
+                            <div class="rating w-4 h-4"><input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" /></div>
+                            <div>
+                                <p class="text-[15px]">5 (753 Review)</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+                <!-- air-1 -->
+                <div class="flex gap-4 align-middle justify-center">
+                    <div><img src="https://i.ibb.co/8Xsk2Xx/Emirates.png" alt=""></div>
+                    <div>
+                        <h1 class="text-blue-600 font-semibold text-[17px]">Emirates Airlines</h1>
+                        <div class="flex gap-1 align-middle ">
+                            <div class="rating w-4 h-4"><input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" /></div>
+                            <div>
+                                <p class="text-[15px]">5 (753 Review)</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- air-1 -->
+                <div class="flex gap-4 align-middle justify-center">
+                    <div><img src="https://i.ibb.co/v1z5NPp/Turkish-Airlines.png" alt=""></div>
+                    <div>
+                        <h1 class="text-blue-600 font-semibold text-[17px]">Turkish Airlines</h1>
+                        <div class="flex gap-1 align-middle ">
+                            <div class="rating w-4 h-4"><input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" /></div>
+                            <div>
+                                <p class="text-[15px]">5 (753 Review)</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- air-1 -->
+                <div class="flex gap-4 align-middle justify-center">
+                    <div><img src="https://i.ibb.co/j3VzMWQ/BBA.png" alt=""></div>
+                    <div>
+                        <h1 class="text-blue-600 font-semibold text-[17px]">Biman Bangla <br> Airlines</h1>
+                        <div class="flex gap-1 align-middle ">
+                            <div class="rating w-4 h-4"><input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" /></div>
+                            <div>
+                                <p class="text-[15px]">5 (753 Review)</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- air-1 -->
+                <div class="flex gap-4 align-middle justify-center">
+                    <div><img src="https://i.ibb.co/rZmk558/Malaysia.png" alt=""></div>
+                    <div>
+                        <h1 class="text-blue-600 font-semibold text-[17px]">Malaysia Airlines</h1>
+                        <div class="flex gap-1 align-middle ">
+                            <div class="rating w-4 h-4"><input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" /></div>
+                            <div>
+                                <p class="text-[15px]">5 (753 Review)</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="lg:max-w-[1366px] m-auto">
+            <h1 class="mt-[100px] font-extrabold text-[30px] mb-[50px]">Testimonials</h1>
+            <div class="lg:pl-[200px]">
+                <div class="carousel carousel-center max-w-sm lg:max-w-2xl lg:px-[500px] lg:py-[80px] space-x-4 bg-blue-500 rounded-box ">
+                    <div class="carousel-item">
+                        <div class="card card-side bg-base-100 shadow-xl">
+                            <figure><img src="https://i.ibb.co/6N5nj8D/Rectangle-30.png" alt="Movie" /></figure>
+                            <div class="card-body">
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Perspiciatis maiores
+                                    voluptatem ipsam est iusto quod! Qui, <br> consequatur quasi? Corporis, quibusdam!
+                                </p>
+                                <h1 class="text-[20px] font-bold">Emily</h1>
+                                <p>Adventure Enthusiast</p>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card card-side bg-base-100 shadow-xl">
+                            <figure><img src="https://i.ibb.co/6N5nj8D/Rectangle-30.png" alt="Movie" /></figure>
+                            <div class="card-body">
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Perspiciatis maiores
+                                    voluptatem ipsam est iusto quod! Qui, <br> consequatur quasi? Corporis, quibusdam!
+                                </p>
+                                <h1 class="text-[20px] font-bold">Emily</h1>
+                                <p>Adventure Enthusiast</p>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card card-side bg-base-100 shadow-xl">
+                            <figure><img src="https://i.ibb.co/6N5nj8D/Rectangle-30.png" alt="Movie" /></figure>
+                            <div class="card-body">
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Perspiciatis maiores
+                                    voluptatem ipsam est iusto quod! Qui, <br> consequatur quasi? Corporis, quibusdam!
+                                </p>
+                                <h1 class="text-[20px] font-bold">Emily</h1>
+                                <p>Adventure Enthusiast</p>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="max-w-[1366px] mx-auto">
+            <h1 class="mt-8 sm:mt-20 font-extrabold text-lg sm:text-2xl mb-4 sm:mb-10">Travel Blog</h1>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- card-1 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="https://i.ibb.co/6D1Wpd0/Rectangle-18.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                            <div>
+                                <p class="text-yellow-500">Work And travel</p>
+                            </div>
+                            <div>
+                                <p>16 September 23</p>
+                            </div>
+                        </div>
+                        <p class="text-lg font-bold mt-2">Embracing the digital nomad lifestyle the digital nomad thr...
+                        </p>
+                        <div class="w-72 border-b border-gray-400 mt-4 sm:hidden"></div>
+
+                        <div class="flex items-center justify-between mt-4">
+                            <div class="flex items-center gap-3">
+                                <div class="avatar">
+                                    <div class="w-8 rounded-full">
+                                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                                            alt="Avatar" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="text-lg font-semibold">Ys Stafen</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="text-yellow-500 text-lg font-semibold">Read More >>></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="https://i.ibb.co/6D1Wpd0/Rectangle-18.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                            <div>
+                                <p class="text-yellow-500">Work And travel</p>
+                            </div>
+                            <div>
+                                <p>16 September 23</p>
+                            </div>
+                        </div>
+                        <p class="text-lg font-bold mt-2">Embracing the digital nomad lifestyle the digital nomad thr...
+                        </p>
+                        <div class="w-72 border-b border-gray-400 mt-4 sm:hidden"></div>
+
+                        <div class="flex items-center justify-between mt-4">
+                            <div class="flex items-center gap-3">
+                                <div class="avatar">
+                                    <div class="w-8 rounded-full">
+                                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                                            alt="Avatar" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="text-lg font-semibold">Ys Stafen</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="text-yellow-500 text-lg font-semibold">Read More >>></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="https://i.ibb.co/6D1Wpd0/Rectangle-18.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                            <div>
+                                <p class="text-yellow-500">Work And travel</p>
+                            </div>
+                            <div>
+                                <p>16 September 23</p>
+                            </div>
+                        </div>
+                        <p class="text-lg font-bold mt-2">Embracing the digital nomad lifestyle the digital nomad thr...
+                        </p>
+                        <div class="w-72 border-b border-gray-400 mt-4 sm:hidden"></div>
+
+                        <div class="flex items-center justify-between mt-4">
+                            <div class="flex items-center gap-3">
+                                <div class="avatar">
+                                    <div class="w-8 rounded-full">
+                                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                                            alt="Avatar" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="text-lg font-semibold">Ys Stafen</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="text-yellow-500 text-lg font-semibold">Read More >>></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="max-w-[1366px] mx-auto pt-8 sm:pt-24">
+            <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-around">
+                <div class="mb-4 sm:mb-0"><img src="https://i.ibb.co/F5S9Qtm/Isolation-Mode.png" alt="Newsletter" />
+                </div>
+                <div class="text-center sm:text-left">
+                    <h1 class="font-extrabold text-lg sm:text-3xl leading-tight">Subscribe To Our <br
+                            class="hidden sm:inline" /> Newsletter!</h1>
+                    <p class="font-semibold text-base sm:text-lg text-blue-600 pt-4">Subscribe To Our Newsletter And
+                        Stay <br class="hidden sm:inline" /> Updated.</p>
+                    <div class="border-2 border-blue-500 rounded-lg mt-4">
+                        <input
+                            class="pl-3 py-2 text-base sm:text-lg text-blue-700 placeholder-blue-300 border-none rounded-lg"
+                            type="text" name="" id="" placeholder="Your Mail">
+                    </div>
+                    <button class="btn btn-warning mt-3 text-base sm:text-lg px-12 sm:px-20">Subscribe</button>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="bg-blue-600 w-full text-white mt-8 sm:mt-14">
+        <div class="max-w-[1366px] mx-auto px-4 sm:px-0">
+            <div class="flex flex-col sm:flex-row items-start justify-between text-sm sm:text-base pt-8">
+                <div class="mb-6 sm:mb-0">
+                    <p class="font-semibold">Address</p>
+                    <p>House-75 Ka,Main <br class="hidden sm:inline" /> Road,Dhaka 1216</p>
+                    <div class="flex items-center gap-2">
+                        <div class="w-5 h-5 pt-1"><img src="https://i.ibb.co/RhbQGk9/maps-flags-447031.png"
+                                alt="Maps" /></div>
+                        <div>
+                            <p>View On Maps</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-6 sm:ml-8">
+                    <p class="font-semibold">About Us</p>
+                    <p class="font-semibold">Stories</p>
+                    <p class="font-semibold">Blog</p>
+                    <p class="font-semibold">Airlines</p>
+                    <p class="font-semibold">Testimonials</p>
+                </div>
+                <div class="mb-6 sm:ml-8">
+                    <p class="font-semibold">Join Us</p>
+                    <p class="font-semibold">Terms Of Service</p>
+                    <p class="font-semibold">Privacy Policy</p>
+                    <p class="font-semibold">Support</p>
+                </div>
+                <div>
+                    <p class="font-semibold">Contact</p>
+                    <p>+880 1234567890</p>
+                    <p>+880 1234567890</p>
+                    <p>+880 1234567890</p>
+                    <p>Info@Airbook.Com</p>
+                </div>
+            </div>
+            <div class="w-full sm:w-[1366px] border-b pt-5 border-gray-400"></div>
+            <div class="flex flex-col-reverse sm:flex-row items-center justify-between py-5 sm:pb-7">
+                <div class="order-2 sm:order-1 mb-6 sm:mb-0"><img src="https://i.ibb.co/bQCdqH5/LOGO-white.png"
+                        alt="Logo" /></div>
+                <div class="order-1 sm:order-2 pt-3 sm:pt-0">
+                    <p class="text-center sm:text-right">© Copyright AIRBOOK</p>
+                </div>
+                <div class="order-3 flex justify-center sm:justify-end items-center gap-4">
+                    <div><img src="https://i.ibb.co/68Gz52s/icon.png" alt="Icon" /></div>
+                    <div><img src="https://i.ibb.co/dDRS4JH/Union.png" alt="Union" /></div>
+                    <div><img src="https://i.ibb.co/hBQCvtg/Vector.png" alt="Vector" /></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
